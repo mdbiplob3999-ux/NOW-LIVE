@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp" android:background="#0B1020">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="YouTube Live" android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Stream your video. Go live." android:textColor="#9AA3C7" android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnChoose" android:layout_width="match_parent" android:layout_height="60dp"
+        android:text="Choose Video" android:backgroundTint="#1B2340" android:textColor="#6C8CFF"/>
+    <TextView android:id="@+id/tvFile" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="No video selected" android:textColor="#9AA3C7" android:layout_marginTop="6dp" android:layout_marginBottom="20dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Streaming Link" android:textColor="#FFFFFF" android:textStyle="bold"/>
+    <EditText android:id="@+id/etUrl" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="rtmps://a.rtmps.youtube.com/live2/STREAM-KEY" android:textColorHint="#5C6590"
+        android:textColor="#FFFFFF" android:inputType="textUri" android:singleLine="true" android:layout_marginBottom="20dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Stream Format" android:textColor="#FFFFFF" android:textStyle="bold"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="28dp">
+        <Button android:id="@+id/btnShorts" android:layout_width="0dp" android:layout_height="56dp"
+            android:layout_weight="1" android:text="Shorts" android:backgroundTint="#1F6BFF" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnLong" android:layout_width="0dp" android:layout_height="56dp"
+            android:layout_weight="1" android:layout_marginStart="8dp" android:text="Long Video"
+            android:backgroundTint="#1B2340" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnStart" android:layout_width="match_parent" android:layout_height="64dp"
+        android:text="Start Live" android:textSize="18sp" android:backgroundTint="#FF3355" android:textColor="#FFFFFF"/>
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Make sure your video and streaming link are correct before starting."
+        android:textColor="#9AA3C7" android:layout_marginTop="12dp"/>
+</LinearLayout>
